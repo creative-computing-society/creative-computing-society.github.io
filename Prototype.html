@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Prototype-229</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  .navbar{
+  	margin-bottom: 0;
+  	border-radius: 0;
+  	background-color:rgba(0,0,0,0.7);
+  	color: #fff;
+  	padding: 1% 0;
+  	font-size: 1.2em;
+  	border:0;
+
+  }
+
+  .navbar-brand{
+  	float: left;
+  	min-height: 55px;
+  	padding: 20px 15px 5px;
+  	font-size: 2.5em;
+  	font-family: Montserrat;
+  	color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+  	color: #fff;
+  	background-color: #404040;
+  }
+  .navbar-inverse .navbar-nav li a {
+  	color: #d5d5d5;
+  }
+  .carousel-caption{
+  	top: 50%;
+  	transform: translateY(-50%);
+  	text-transform: uppercase;
+  	color: #000;
+  }
+
+  .btn{
+  	font-size: 18px;
+  	color: #fff;
+  	padding: 12px 22px;
+  	background-color: #4e4585;
+  	border: 2px solid #fff;
+  }
+
+  .btn-default:hover{
+  	background-color: #d4d4d4;
+  }
+
+  @media (max-width: 600px){
+  	.carousel-caption{
+  		display: none;
+  	}
+  	#icon {
+  		max-width: 150px;
+  	}
+  	h2 {
+  		font-size: 1.7em;
+  	}
+
+  }
+  #container {
+  	margin: 4% auto;
+  }
+
+  #icon {
+  	max-width: 200px;
+  	margin: 1% auto;
+  }
+
+  footer{
+  	width: 100%;
+  	background-color: #000;
+  	padding: 5%;
+  	color: #d1d1d1;
+  }
+
+  .fa {
+  	padding: 15px;
+  	font-size: 25px;
+  	color: #ff2020;
+  }
+
+  .fa:hover{
+  	color: #d5d5d5;
+  	text-decoration: none;
+  }
+
+@media (max-width: 900px){
+  .fa{
+  		font-size: 20px;
+  		padding: 10px;
+  	}
+}
+.btn-danger{
+	font-size: 18px;
+  	color: #fff;
+  	padding: 12px 22px;
+  	background-color: #252525;
+  	border: 0;
+}
+
+#wah{
+	padding: 50px 0;
+}
+
+#collage{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.cc:hover{
+	cursor: pointer;
+	padding: 0px;
+}
+
+.cc{
+	padding: 20px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+} 
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href=""><em>Yashgoien</em></a>
+	</div>
+
+				
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+			
+			
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#story">Fun</a></li>
+			<li><a href="#collage">Collage</a></li>
+			<li><a href="#contact">Contact</a></li>
+
+
+    </ul>
+    </div>
+	</div>
+	</nav>
+
+	<div id="mycarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#mycarousel" data-slide-to="1"></li>
+			<li data-target="#mycarousel" data-slide-to="2"></li>
+		</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="https://images.wallpaperscraft.com/image/leaves_green_plant_122801_3840x2160.jpg" width="100%" id="home">
+					<div class="carousel-caption">
+						<h1 style="color: #d1d1d1;">I really created this</h1>
+						<br>
+						<button type="button" class="btn btn-default">Get Started</button>
+					</div>
+				</div>  <!--End Active-->
+						<div class="item"> 
+							<img src="https://images.wallpaperscraft.com/image/lily_leaves_bw_124626_3840x2160.jpg" width="100%">
+				</div>
+						<div class="item"> 
+							<img src="https://images.wallpaperscraft.com/image/autumn_maple_leaves_fallen_yellow_119324_3840x2160.jpg" width="100%">
+				</div>
+			</div> 
+			<!--Start Slider Controls-->
+			<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+
+	</div> <!--This is ENd Of Carousel-->
+	<div class="container text-center" id="about">
+		<h2>Stay Connected To The World</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="https://www.bing.com/th?id=OIP.N2fIM5hpv83cWvMP5Eg1dQHaHa&w=166&h=165&c=7&o=5&pid=1.7" id="icon">
+			</div>
+
+			<div class="col-sm-4">
+				<img src="https://www.bing.com/th?id=OIP.OIk5OsSBvIB-RYnDpr9MwAHaHa&pid=Api" id="icon">
+			</div>
+
+			<div class="col-sm-4">
+				<img src="https://www.bing.com/th?id=OIP.N2fIM5hpv83cWvMP5Eg1dQHaHa&w=166&h=165&c=7&o=5&pid=1.7" id="icon">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container" id="story">
+		<div class="row">
+
+			<div class="col-md-6">
+				<h3>The Lion and the Mouse</h3>
+Once when a lion, the king of the jungle, was asleep, a little mouse began running up and down on him. This soon awakened the lion, who placed his huge paw on the mouse, and opened his big jaws to swallow him.
+<br>
+"Pardon, O King!" cried the little mouse. "Forgive me this time. I shall never repeat it and I shall never forget your kindness. And who knows, I may be able to do you a good turn one of these days!”
+The lion was so tickled by the idea of the mouse being able to help him that he lifted his paw and let him go.Sometime later, a few hunters captured the lion, and tied him to a tree. After that they went in search of a wagon, to take him to the zoo.
+Just then the little mouse happened to pass by. On seeing the lion’s plight, he ran up to him and gnawed away the ropes that bound him, the king of the jungle.
+"Was I not right?" said the little mouse, very happy to help the lion.
+<br>
+<strong>MORAL: Small acts of kindness will be rewarded greatly.</strong>
+			</div>
+			<div class="col-md-6">
+				<img src="https://www.bing.com/th?id=OIP.OsulSwiROc5fkoa7INtV2QHaEK&pid=Api" class="img-responsive img-circle">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h3>The Goose With Golden Eggs</h3>
+				Once upon a time, a man and his wife had the good fortune to have a goose which laid a golden egg every day. Lucky though they were, they soon began to think they were not getting rich fast enough.
+They imagined that if the bird is able to lay golden eggs, its insides must be made of gold. And they thought that if they could get all that precious metal at once, they would get mighty rich very soon. So the man and his wife decided to kill the bird.
+However, upon cutting the goose open, they were shocked to find that its innards were like that of any other goose!
+<strong>MORAL: THINK BEFORE YOU ACT</strong>
+				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="https://www.bing.com/th?id=OIP.rGt2tl6mvIVN-lV62SmpmgHaJg&pid=Api" class="img-responsive img-rounded" width="320px" height="400px">
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="shayari">
+				<h4>Aur Kuchh Shayari...</h4>
+				<p>Wo Chinn Naa Jaye Bass iss Darr Se Dil Udaas Bhi Hai<br>
+Udasiyaan Mere Ander Ki Chup Nahi Paayein<br>
+Agarche Mere Badan Pe Naya Libaas Bhi Hai<br>
+Sitam Toh Yeh Hai Gareezaan Bhi Rehta Hai Mujh Se<br>
+Woh Ek Shaqs Jo Mera Adaa Shinaas Bhi Hai<br>
+Judaiyoun Me Bhi Yaad Aayein Qurbatein Usski<br>
+Ghuli Hui Meri Talqi Me Ek Mithaas Bhi Hai<br>
+Ajeeb MoujIzeh Dekhein Hain Yeh Mohabbat Me<br>
+Woh Mujh Se Durr Bhi Hai Aur Mere Paas Bhi Hai…<br>
+<br>
+Ye zindagi tab haasin hoti hai,<br>
+Chahane se jab har duaa qabool hoti hai…<br>
+Kehne ko to sab apne hai magar…..<br>
+Kaash koi aisa ho jo kahe…….<br>
+ke tere dard se muze Taqleef hoti hai …</p>
+				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="https://www.bing.com/th?id=OIP.iPgLudZvP97b7jfhWM8BqwHaHa&pid=Api" class="img-responsive img-rounded" id="wah">
+			</div>
+		</div>
+	</div>
+
+	<div class="container" >
+
+	<div class="container" id="collage" >
+	<div class="row">
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.-UgcXsprzXGckkcOQKDACwHaNK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="http://media.idownloadblog.com/wp-content/uploads/2016/04/iPhone-wallpaper-abstract-portrait-astronaut-macinmac.jpg" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="https://www.bing.com/th?id=OIP.hNVyE1-oUYeDeocVoslHMgHaNK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="https://www.bing.com/th?id=OIP.IKQmLDCLt_6ilwIUh_PGewHaNK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.uxKljoek_2YrE5A6GX3OZAHaNK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc">
+			<img src="https://tse4.mm.bing.net/th?id=OIP.BdocucaQJCII4THD8fYBOwHaNJ&pid=Api" class="img-responsive img-rounded">
+		</div>
+		
+		
+	</div>
+	</div>
+	</div>
+
+<div class="container">
+	<div class="container" id="collage">
+		<div class="row"><br>
+		
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.AtcPWGAotxtMntxp4XPwGgHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.QTVMyjhDf91IHQwTwr4diQHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://www.bing.com/th?id=OIP.wnOM5px6f-AxF_grF3MnqAHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://www.bing.com/th?id=OIP.t-cCODNf97cv0s1736Ja0gHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://www.bing.com/th?id=OIP.oWFwZEMnhtu-YLMi1tf71QHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 cc dd">
+			<img src="https://www.bing.com/th?id=OIP.JW2EymwsPFvWuiEzuz6iBAHaEK&pid=Api" class="img-responsive img-rounded">
+		</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="container">
+		<div class="row">
+			<h4><a href="#hidden" data-toggle="collapse" style="color: #900100; text-decoration: none; font-family: lato;"><b>Wanna Read More? Click Here...</b></a></h4>
+			<div id="hidden" class="collapse" style="background-image: url(http://sf.co.ua/14/06/wallpaper-174989.jpg); padding: 20px; width: 100%">
+				<h4>Poem On Death</h4>
+				<p>If I should die,<br>
+And you should live,<br>
+And time should gurgle on,<br>
+And morn should beam,<br>
+And noon should burn,<br>
+As it has usual done;<br>
+If birds should build as early,<br>
+And bees as bustling go,–<br>
+One might depart at option<br>
+From enterprise below!<br>
+‘Tis sweet to know that stocks will stand<br>
+When we with daisies lie,<br>
+That commerce will continue,<br>
+And trades as briskly fly.<br>
+It make the parting tranquil<br>
+And keeps the soul serene,<br>
+That gentlemen so sprightly<br>
+Conduct the pleasing scene!<br><br>
+
+– Emily Dickinson</p>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center" id="contact">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Contact Us</h2>
+				<br>
+				<h4>Our Adress And Contact Info Here</h4>
+
+			</div>
+
+			<div class="col-sm-4">
+				<h3>Connect With Us</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+
+			</div>
+			<div class="col-sm-4">
+				<img src="C:\Users\Yash Goien\Desktop\Bootstrap-Website-Starter-Files-1\Bootstrap Website Starter Files\img\bunny.png" class="icon">
+
+			</div>
+			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-1" id="Join" title="Click Here">Join Now</button>
+	<div class="modal fade" id="modal-1">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times:</button>
+					<h3 class="modal-title">Sign Up</h3>
+				</div>
+				<div class="modal-body">
+				    <form action="" class="navbar-form navbar-center" role="Fill Info">
+					    <div class="form-group">
+						    <input type="text" class="form-control" placeholder="Full Name">
+						    <hr>
+						    <input type="text" class="form-control" placeholder="Username">
+						     <hr>
+						    <input type="text" class="form-control" placeholder="Password">
+						     <hr>
+						    <input type="text" class="form-control" placeholder="Confirm Password">
+						    <hr>
+						    <input type="text" class="form-control" placeholder="Phone Number">
+					    </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="" class="btn btn-default">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+	</footer>
+
+	<footer class="container-fluid text-center">
+  <a href="#home" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Created By : <a href="#" title="Yes Really">Yash Goien</a></p> 
+</footer> 
+
+
+
+</body>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
