@@ -77,3 +77,10 @@ img::-moz-selection {
   color: $white;
   background: transparent;
 }
+
+footer {
+  background: $primary;
+  color: $white;
+  padding: 2em;
+  text-align: center;
+}
