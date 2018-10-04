@@ -1,0 +1,4 @@
+.DS_Store
+/vendor/fontawesome-free
+# dependencies
+/node_modules
