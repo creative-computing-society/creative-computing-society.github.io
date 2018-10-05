@@ -90,6 +90,13 @@ img::-moz-selection {
   background: transparent;
 }
 
+footer {
+  background: #F05F40;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
