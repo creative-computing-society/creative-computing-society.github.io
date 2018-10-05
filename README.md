@@ -8,6 +8,8 @@ For an extensive beginner's guide on how to make a pull request, kindly visit
 https://github.com/creative-computing-society/Guide_to_contribute_in_Hacktoberfest
 
 Also you can try and learn working with github more on try.github.io !
+ 
+ To access ultimate beginners guide for Git and Github, visit - https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github
 
 ## Optional commands
 // Set up Intructions if you want to run broswersync, scss ect. ---
