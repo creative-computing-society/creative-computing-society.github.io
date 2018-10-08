@@ -14,3 +14,4 @@ Also you can try and learn working with github more on try.github.io !
 1. Clone Repo
 2. inside directory root, run - npm install (in terminal)
 3. Run in terminal - gulp dev (will fire up localhost server so you view the site and edit)
+THANK YOU!!
