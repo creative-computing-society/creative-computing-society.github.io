@@ -9,7 +9,7 @@ https://github.com/creative-computing-society/Guide_to_contribute_in_Hacktoberfe
 
 Also you can try and learn working with github more on try.github.io !
 
-## Optional commands
+## Commands That Are Optional
 // Set up Intructions if you want to run broswersync, scss ect. ---
 1. Clone Repo
 2. inside directory root, run - npm install (in terminal)
