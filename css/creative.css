@@ -188,6 +188,7 @@ header.masthead {
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header.masthead hr {
