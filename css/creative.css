@@ -16,7 +16,7 @@ body {
 
 hr {
   max-width: 50px;
-  border-width: 3px;
+  border-width: 5px;
   border-color: #F05F40;
 }
 
@@ -26,8 +26,8 @@ hr.light {
 
 a {
   color: #F05F40;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 a:hover {
